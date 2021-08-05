@@ -5,4 +5,6 @@ date: "8/4/2021"
 output: pdf_document
 ---
 
+Este es un texto de ejemplo, arriba de la imagen.
+
 ![mi imgaen](sesion.png)
