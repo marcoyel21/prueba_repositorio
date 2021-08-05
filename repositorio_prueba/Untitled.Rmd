@@ -1,0 +1,8 @@
+---
+title: "Untitled"
+author: "Marco Ramos"
+date: "8/4/2021"
+output: pdf_document
+---
+
+![mi imgaen](sesion.png)
