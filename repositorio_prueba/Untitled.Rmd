@@ -12,20 +12,24 @@ header-includes :
  \usepackage[spanish]{babel}
 ---
 
+% texto fuente tamaño 10, mas margen, y cursivas    
+\newenvironment{enunciado}
+{
+    \itshape
+    \leftskip=1cm \rightskip=1cm
+    \begingroup
+    \fontsize{10}{10}\selectfont
+    }
+    {
+    \endgroup
+    \leftskip=0cm\rightskip=0cm
+}
+\begin{enunciado}
 Este es un texto de ejemplo, arriba de la imagen.
+\end{enunciado}
 
 ![mi imgaen](img/sesion.png)
 
-```{r, echo=FALSE}
 
-Concepto<-c("Descripción de la etapa","Interés Fijado","Interés Cobrado")
-Etapa1<-c("Correrá los primeros doce meses a partir de la vigencia de la reestructura", "6.5%", "9.259%")
-Etapa2<-c("Correrá transcurridos los primeros doce meses", "8.75%", "9.735%")
-Etapa3<-c("Correrá por las cantidades del saldo original que excedan de 165,000 UDIS","10%","9.735%")
 
-DATA<-data.frame(Concepto,Etapa1,Etapa2,Etapa3)
-library(kableExtra)
-kable(DATA, booktabs=T,  col.names =c("Concepto","Etapa1","Etapa2","Etapa3"), caption= "Intereses conforme a la cláusula 3BIS del convenio modificatorio")%>%add_footnote(c("Conforme al estado de cuenta presentado por la Actora como Anexo 3", "Valores expresados sin tomar en cuenta el costo inflacionario de las UDIS"))%>%
-  kable_styling(latex_options = "HOLD_position")%>%   kable_styling(full_width = TRUE)
-
-``` 
+Agregamos un parrafo de contestación de demanda
