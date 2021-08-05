@@ -1,5 +1,5 @@
 ---
-mainfont: Century Schoolbook
+mainfont: Arial
 output:
   pdf_document:
     latex_engine: xelatex
@@ -14,4 +14,4 @@ header-includes :
 
 Este es un texto de ejemplo, arriba de la imagen.
 
-![mi imgaen](sesion.png)
+![mi imgaen](img/sesion.png)
