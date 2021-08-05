@@ -1,8 +1,15 @@
 ---
-title: "Untitled"
-author: "Marco Ramos"
-date: "8/4/2021"
-output: pdf_document
+mainfont: Century Schoolbook
+output:
+  pdf_document:
+    latex_engine: xelatex
+geometry: paperheight=34.5cm,paperwidth=21.59cm, left=25mm, right=25mm, top=50.8mm, bottom=40mm, asymmetric
+fontsize: 12pt
+header-includes :
+ \usepackage{blindtext}
+ \linespread{1.15}
+ \vspace{1cm}
+ \usepackage[spanish]{babel}
 ---
 
 Este es un texto de ejemplo, arriba de la imagen.
